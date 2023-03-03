@@ -48,8 +48,10 @@ class FamilyStructure:
 
     def delete_member(self, id):
         # fill this method and update the return
-        self._members.pop(id)
-        pass 
+        borrable = filter( (self._members.id == id) , self._members)
+        print(borrable)
+        self._members.pop(borrable)
+        return self.members
 
     def get_member(self, id):
         # fill this method and update the return
